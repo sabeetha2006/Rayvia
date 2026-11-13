@@ -18,7 +18,7 @@ import "./App.css";
 
 const AdminApp = lazy(() => import("./admin/AdminApp.jsx"));
 
-const API = "http://localhost:5001/api";
+const API = import.meta.env.VITE_API_BASE_URL || "http://localhost:5001/api";
 
 const articleImages = {
   "future-of-web-development-2026":
